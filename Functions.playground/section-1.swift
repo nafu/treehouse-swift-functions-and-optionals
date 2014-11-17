@@ -25,3 +25,14 @@ calculateArea(100, 120)
 // 1. Must start with a letter and not a number or special character
 // 2. Preferably, use camel casing, such as calculateArea (where subsequent words are capitalized)
 // 3. The name must describe the purpose of the function (don't name a function a or calc which does not explain the purpose of the function, give it a meaningful name)
+
+func calculateAreaWithReturn(height: Int, width: Int) -> Int {
+	return height * width
+}
+
+let area = calculateAreaWithReturn(10, 12)
+println("Area = \(area)")
+
+println("Area = \(calculateAreaWithReturn(100, 120))")
+
+calculateAreaWithReturn(1000, 1200)
