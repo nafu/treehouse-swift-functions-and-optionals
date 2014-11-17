@@ -36,3 +36,9 @@ println("Area = \(area)")
 println("Area = \(calculateAreaWithReturn(100, 120))")
 
 calculateAreaWithReturn(1000, 1200)
+
+func fullName(firstName: String, lastName: String) -> String {
+	return "\(firstName) \(lastName)"
+}
+
+fullName("Fumiya", "Nakamura")
