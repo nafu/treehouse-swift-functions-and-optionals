@@ -42,3 +42,15 @@ func fullName(firstName: String, lastName: String) -> String {
 }
 
 fullName("Fumiya", "Nakamura")
+
+func calculateAreaWithNamedParameters(height height: Int, width width: Int) -> Int {
+	return height * width
+}
+
+calculateAreaWithNamedParameters(height: 1000, width: 1200)
+
+func calculateAreaWithShortNamedParameters(#height: Int, #width: Int) -> Int {
+	return height * width
+}
+
+calculateAreaWithShortNamedParameters(height: 1000, width: 1200)
