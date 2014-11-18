@@ -24,3 +24,17 @@ empty
 if let culprit = findApt("404") {
 	println("Apt: Found: \(culprit)")
 }
+
+func sendNoticeTo(#aptNumber: Int) {
+	println("aptNumber is \(aptNumber)")
+}
+
+if let culprit = findApt("101") {
+	if let aptNumber = culprit.toInt() {
+		sendNoticeTo(aptNumber: aptNumber)
+	}
+}
+
+if let culprit = findApt("101")?.toInt() {
+	sendNoticeTo(aptNumber: culprit)
+}
