@@ -54,3 +54,13 @@ func searchNamesWithNamedReturnTypes(#name: String) -> (found: Bool, description
 let result2 = searchNamesWithNamedReturnTypes(name: "Andrew")
 result2.found
 result2.description
+
+func songToTuple(song: Dictionary<String, String>) -> (title: String, artist: String, album: String) {
+	return (song["title"]!, song["artist"]!, song["album"]!)
+}
+
+let tupleSong = songToTuple(["title": "Give It Away", "artist": "Red Hot Chili Peppers", "album": "Red Hot Chili Peppers Greatest Hits"])
+
+tupleSong.title
+tupleSong.artist
+tupleSong.album
